@@ -10,7 +10,7 @@ var runClock = function(){
   var secHand = document.querySelector(".second");
 
   var hrHandPos = hour * (360/12) + min * (30/60); //(12 position changes every 360deg)+(make transition smoother)
-  var minHandPos = min * (360/60) + sec * (6/60); 
+  var minHandPos = min * (360/60) + sec * (6/60);
   var secHandPos = sec * (360/60); //(60 position changes every 360deg)
 
   hrHand.style.transform = "rotate(" + hrHandPos + "deg)";
